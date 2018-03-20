@@ -33,7 +33,6 @@ python setup.py build_ext --inplace
 cp ~/sigsim_pads/python/horse.so  ~/sigsim_pads/hedera-ryu/ripl
 cp ~/sigsim_pads/python/horse.so  ~/sigsim_pads/hedera-ryu/
 
-
 cd ~
 #  Dependencies for ryu
 sudo apt-get install -y python-routes python-dev

@@ -40,4 +40,5 @@ do
 # ./run.sh $k random 6 6 $trial $duration
 done
 
+sudo mn -c
 # python plot_results.py $k $duration results -- results1.png 1 ecmp hedera control -- results2.png 1 st random ecmp -- results3.png 2,6 ecmp hedera control -- results4.png 2,6 st random ecmp

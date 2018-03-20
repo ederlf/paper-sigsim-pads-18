@@ -30,4 +30,3 @@ config.log
 *~
 *.pc
 config.status
-Vagrantfile
