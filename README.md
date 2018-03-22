@@ -107,7 +107,7 @@ Installing Dependencies:
 $ sudo apt-get update && sudo apt-get install build-essential git libevent-dev valgrind ack-grep clang-3.5 bwm-ng -y
 $ sudo apt-get install  autoconf libtool build-essential pkg-config python-pip python-dev -y
 $ sudo apt-get install libfreetype6-dev libpng12-dev gnuplot -y
-$ sudo pip install cython 
+$ sudo pip install cython==0.27.3 
 ```
 
 The connection with OpenFlow controllers needs the installation of a C version from the base part of [Libfluid](http://opennetworkingfoundation.github.io/libfluid/). Consequently, libfluid dependencies are required:
@@ -165,7 +165,7 @@ $ cd ~
 $ #  Dependencies for ryu
 $ sudo apt-get install -y python-routes python-dev
 $ sudo pip install -r ~/sigsim_pads/setup/pip-ryu-requires
-$ sudo pip install tinyrpc
+$ sudo pip install tinyrpc==0.8
 $ #  Ryu install
 $ cd  ~/sigsim_pads/hedera-ryu/ryu
 $ sudo python setup.py install
@@ -187,10 +187,10 @@ Install matplotlib.
 # This is ugly but could not find a better way to solve it.
 # The problem is that matplotlib requires six>=1.10 and the OS version is smaller
 # The procedure upgrade pip, removes the OS version and does the same to six.
-$ sudo pip install --ignore-installed --upgrade pip
+$ sudo pip install --ignore-installed --upgrade pip==9.0.2
 $ sudo apt-get remove python-pip python-six -y
-$ sudo pip install --upgrade six
-$ sudo pip install matplotlib
+$ sudo pip install --upgrade six==1.11.0
+$ sudo pip install matplotlib==2.2.0
 ```
 
 # Creating a Topology
