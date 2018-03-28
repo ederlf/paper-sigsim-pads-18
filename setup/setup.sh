@@ -28,9 +28,9 @@ cd ~/sigsim_pads
 ./configure
 make
 
-cd python
+cd ~/sigsim_pads/python
 python setup.py build_ext --inplace
-cp ~/sigsim_pads/python/horse.so  ~/sigsim_pads/hedera-ryu/ripl
+cp ~/sigsim_pads/python/horse.so  ~/sigsim_pads/hedera-ryu/ripl/
 cp ~/sigsim_pads/python/horse.so  ~/sigsim_pads/hedera-ryu/
 
 cd ~
