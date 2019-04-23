@@ -11,6 +11,6 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest:6633, host:6637 
   config.vm.provision :shell, privileged: false, :path => "setup/setup.sh"
   config.ssh.forward_x11 = true
-  config.vm.synced_folder ".", "/home/vagrant/sigsim_pads"
+  config.vm.synced_folder ".", "/home/vagrant/paper-sigsim-pads-18"
   
 end
